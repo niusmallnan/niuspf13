@@ -11,6 +11,9 @@ mkdir ~/.pip && cp pip.conf ~/.pip/
 wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py && rm -f get-pip.py
 pip install virtualenv
 
+# tmux conf
+cp tmux.conf ~/.tmux.conf
+
 # for spf13 vim
 cp .vimrc.before.local  ~/
 cp .vimrc.bundles.local ~/
