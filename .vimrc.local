@@ -1,0 +1,7 @@
+
+set mouse=i
+set nofoldenable
+
+iab __pdb import ipdb;ipdb.set_trace()
+
+cmap w!! w !sudo tee % > /dev/null
