@@ -2,11 +2,14 @@
 set mouse=i
 set nofoldenable
 
-iab __pdb import ipdb;ipdb.set_trace()
-
 cmap w!! w !sudo tee % > /dev/null
 
 let NERDTreeQuitOnOpen=0
 
 highlight ColorColumn ctermbg=8
 autocmd FileType python set cc=80
+
+let g:snips_author = 'niusmallnan'
+let g:snips_email = 'zhangzb@neunn.com'
+let g:snips_github = 'https://github.com/niusmallnan'
+
