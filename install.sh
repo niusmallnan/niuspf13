@@ -6,8 +6,7 @@ __ScriptVersion="1.0"
 #         NAME:  usage
 #  DESCRIPTION:  Display usage information.
 #===============================================================================
-function usage ()
-{
+usage() {
     echo "Usage :  $0 [options] [--]
 
     Options:
@@ -18,8 +17,7 @@ function usage ()
 
 }    # ----------  end of function usage  ----------
 
-function init()
-{
+init() {
     apt-get update && apt-get install -y python-dev exuberant-ctags vim-nox
     # for Mac OSX
     # brew install vim --with-lua
@@ -40,8 +38,7 @@ function init()
     curl https://raw.githubusercontent.com/spf13/spf13-vim/3.0/bootstrap.sh -L -o - | sh
 }
 
-function update()
-{
+update() {
     cp .vimrc.before.local  ~/
     cp .vimrc.bundles.local ~/
     cp .vimrc.local ~/
@@ -52,20 +49,19 @@ function update()
 #  Handle command line arguments
 #-----------------------------------------------------------------------
 
-while getopts ":hv" opt
+while getopts ":hviu" opt
 do
   case $opt in
 
     h|help     )  usage; exit 0   ;;
 
-    v|version  )  echo "$<`0:0`> -- Version $__ScriptVersion"; exit 0   ;;
+    v|version  )  echo "$0 -- Version $__ScriptVersion"; exit 0   ;;
 
     i|init     )  init; exit 0   ;;
 
-    u|update     )  update; exit 0   ;;
+    u|update   )  update; exit 0   ;;
 
-    * )  echo -e "\n  Option does not exist : $OPTARG\n"
-          usage; exit 1   ;;
+    * )  usage; exit 1   ;;
 
   esac    # --- end of case ---
 done
