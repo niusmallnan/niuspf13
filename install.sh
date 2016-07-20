@@ -18,7 +18,11 @@ usage() {
 }    # ----------  end of function usage  ----------
 
 init() {
-    apt-get update && apt-get install -y python-dev exuberant-ctags vim-nox
+    apt-get update && apt-get install -y python-dev exuberant-ctags
+    # brew install cmake
+
+    # if use neocomplete, install below
+    # vim-nox for ubuntu
     # for Mac OSX
     # brew install vim --with-lua
 
