@@ -18,7 +18,8 @@ usage() {
 }    # ----------  end of function usage  ----------
 
 init() {
-    apt-get update && apt-get install -y python-dev exuberant-ctags vim-nox
+    apt-get update && apt-get install -y python-dev exuberant-ctags build-essential cmake
+    # vim-nox
     # for Mac OSX
     # brew install vim --with-lua
 
@@ -36,6 +37,9 @@ init() {
     cp .vimrc.local ~/
     # http://j.mp/spf13-vim3
     curl https://raw.githubusercontent.com/spf13/spf13-vim/3.0/bootstrap.sh -L -o - | sh
+
+    # YCM
+    # cd ~/.vim/bundle/YouCompleteMe && ./install.py --clang-completer --gocode-completer
 }
 
 update() {
