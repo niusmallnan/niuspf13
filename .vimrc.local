@@ -13,3 +13,6 @@ let g:snips_author = 'niusmallnan'
 let g:snips_email = 'zhangzb@neunn.com'
 let g:snips_github = 'https://github.com/niusmallnan'
 
+if count(g:spf13_bundle_groups, 'youcompleteme')
+    nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+endif

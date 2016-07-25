@@ -19,7 +19,10 @@ usage() {
 
 init() {
     apt-get update && apt-get install -y python-dev exuberant-ctags build-essential cmake
-    # vim-nox
+    # brew install cmake
+
+    # if use neocomplete, install below
+    # vim-nox for ubuntu
     # for Mac OSX
     # brew install vim --with-lua
 
