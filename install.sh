@@ -42,6 +42,7 @@ init() {
     curl https://raw.githubusercontent.com/spf13/spf13-vim/3.0/bootstrap.sh -L -o - | sh
 
     # YCM
+    # git clone --recursive https://github.com/Valloric/YouCompleteMe.git /root/.vim/bundle/YouCompleteMe
     # cd ~/.vim/bundle/YouCompleteMe && ./install.py --clang-completer --gocode-completer
 }
 
