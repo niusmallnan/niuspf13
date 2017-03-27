@@ -18,8 +18,8 @@ usage() {
 }    # ----------  end of function usage  ----------
 
 init() {
-    apt-get update && apt-get install -y python-dev exuberant-ctags build-essential cmake
-    # brew install cmake
+    # apt-get update && apt-get install -y python-dev exuberant-ctags build-essential cmake
+    brew install cmake
 
     # if use neocomplete, install below
     # vim-nox for ubuntu
@@ -28,7 +28,7 @@ init() {
 
     # for python pip
     mkdir ~/.pip && cp pip.conf ~/.pip/
-    wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py && rm -f get-pip.py
+    curl https://bootstrap.pypa.io/get-pip.py -L -o - | sudo python
     pip install virtualenv
 
     # tmux conf
