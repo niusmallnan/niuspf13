@@ -44,6 +44,8 @@ init() {
     # YCM
     # git clone --recursive https://github.com/Valloric/YouCompleteMe.git /root/.vim/bundle/YouCompleteMe
     # cd ~/.vim/bundle/YouCompleteMe && ./install.py --clang-completer --gocode-completer
+    # # updata YCM
+    # git submodule update --recursive --remote
 }
 
 update() {
