@@ -48,7 +48,7 @@ init() {
     # ~/.vim/bundle/YouCompleteMe/third_party/ycmd/clang_archives
     # # build
     # cd ~/.vim/bundle/YouCompleteMe
-    # http_proxy=127.0.0.1:1087./install.py --clang-completer --gocode-completer
+    # http_proxy=127.0.0.1:1087 python3 install.py --clang-completer --gocode-completer
 
     # # updata YCM
     # git submodule update --recursive --remote
