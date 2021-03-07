@@ -50,6 +50,12 @@ init() {
     # cd ~/.vim/bundle/YouCompleteMe
     # http_proxy=127.0.0.1:1087 python3 install.py --clang-completer --gocode-completer
 
+    # #init YCM submodules
+    # git submodule update --init --recursive
+
+    # #deinit YCM submodules
+    # git submodule deinit --all -f
+
     # # updata YCM
     # git submodule update --recursive --remote
 }
