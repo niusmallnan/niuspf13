@@ -40,24 +40,6 @@ init() {
     cp .vimrc.local ~/
     # http://j.mp/spf13-vim3
     curl https://raw.githubusercontent.com/spf13/spf13-vim/3.0/bootstrap.sh -L -o - | sh
-
-    # YCM
-
-    # git clone --recursive https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
-    # # download clang manually
-    # ~/.vim/bundle/YouCompleteMe/third_party/ycmd/clang_archives
-    # # build
-    # cd ~/.vim/bundle/YouCompleteMe
-    # http_proxy=127.0.0.1:1087 python3 install.py --clang-completer --gocode-completer
-
-    # #init YCM submodules
-    # git submodule update --init --recursive
-
-    # #deinit YCM submodules
-    # git submodule deinit --all -f
-
-    # # updata YCM
-    # git submodule update --recursive --remote
 }
 
 update() {
