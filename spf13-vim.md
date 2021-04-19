@@ -3,7 +3,7 @@
 启动VIM：
 
 ```
-http_proxy=127.0.0.1:1087 vim
+https_proxy=127.0.0.1:1087 http_proxy=127.0.0.1:1087 vim
 ```
 
 Bundle管理插件，需要在VIM中执行：
