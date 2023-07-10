@@ -3,8 +3,12 @@
 启动VIM：
 
 ```
-https_proxy=127.0.0.1:1087 http_proxy=127.0.0.1:1087 vim
+https_proxy=127.0.0.1:7890 http_proxy=127.0.0.1:7890 vim
 ```
+
+安装插件之前，调整配置：
+
+- https://github.com/spf13/spf13-vim/pull/1035
 
 Bundle管理插件，需要在VIM中执行：
 
