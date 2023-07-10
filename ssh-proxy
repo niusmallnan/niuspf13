@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -o "ProxyCommand corkscrew 127.0.0.1 7890 %h %p" -o ServerAliveInterval=50 $1
