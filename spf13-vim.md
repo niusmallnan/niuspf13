@@ -26,7 +26,7 @@ cd ~/.vim/bundle/YouCompleteMe/third_party/ycmd/clang_archives
 # build
 # please check this if using macOS <=10.14, https://github.com/ycm-core/YouCompleteMe/issues/3805#issuecomment-72764302
 cd ~/.vim/bundle/YouCompleteMe
-http_proxy=127.0.0.1:1087 python3 install.py --clang-completer --gocode-completer
+https_proxy=127.0.0.1:7890 http_proxy=127.0.0.1:7890 python3 install.py --clang-completer --gocode-completer
 
 # init YCM submodules
 git submodule update --init --recursive

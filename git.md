@@ -13,5 +13,5 @@
 [core]
     editor = /usr/local/bin/vim
 [http]
-    proxy = http://127.0.0.1:1087
+    proxy = http://127.0.0.1:7890
 ```
